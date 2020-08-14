@@ -25,10 +25,11 @@ body{
     cursor: pointer;
     font-size: 2rem;
     outline: none;
-    color: #1e1e1e;
+    color: hsl(0, 0%, 12%);
     border: 1px solid #292929;
     background: hsl(0, 0%, 85%);
-    border-radius: 2px;
+    border-radius: 1px;
+    transition: 0.2s;
 }
 
 .calculator-grid > button:hover{
@@ -42,12 +43,13 @@ body{
 
 .output{
     grid-column: 1 / -1;
-    background: #292929;
+    background: #333333;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
     padding: 10px;
+    border-radius: 1px;
     word-wrap: break-word;
     word-break: break-all;
 }
@@ -58,6 +60,6 @@ body{
 }
 
 .output .current-operand{
-    color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 90%);
     font-size: 2.5rem;
 }
